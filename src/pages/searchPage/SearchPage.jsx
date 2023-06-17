@@ -88,13 +88,13 @@ const SearchPage = () => {
         </div>
       </div>
 
-      {loading && <p>Loading...</p>}
+      {loading && <p style={{textAlign: "center", marginTop: "40px"}}>Loading...</p>}
 
       {errorMessage && <p className="error">{errorMessage}</p>}
 
       {searchResults && (
         <div className="search__results">
-          <h2>Search Results</h2>
+          <h2 style={{marginTop: "40px"}}>Search Results</h2>
           <ul>
             <Card pokemon={searchResults} />
           </ul>
