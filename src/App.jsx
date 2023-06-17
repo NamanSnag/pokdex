@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar"
-import { Home, SearchPage } from "./pages";
+import { Listing, Bookmark, SearchPage } from "./pages";
 
 function App() {
 
@@ -15,6 +15,13 @@ function App() {
           path="/"
           element={
             <SearchPage/>
+          }
+        />
+        <Route
+          exact
+          path="/bookmark"
+          element={
+            <Bookmark/>
           }
         />
       </Routes>

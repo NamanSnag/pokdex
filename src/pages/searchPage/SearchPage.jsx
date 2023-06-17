@@ -2,12 +2,13 @@ import { useState } from "react";
 import { pokemonNames } from "./data";
 
 import "./style.scss";
+import { Card } from "../../components";
 
 const SearchPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const [searchResults, setSearchResults] = useState({});
+  const [searchResults, setSearchResults] = useState();
   const [autoSuggestion, setAutoSuggestion] = useState([]);
 
   const handleSearch = async () => {
@@ -24,7 +25,17 @@ const SearchPage = () => {
         `https://pokeapi.co/api/v2/pokemon/${searchTerm}`
       );
       const data = await response.json();
-      setSearchResults(data);
+      const type = data.types.map((type)=>{
+        return(type.type.name);
+      })
+      setSearchResults({
+        name: data.name,
+        image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${data.id}.png`,
+        id: data.id,
+        height: data.height,
+        weight: data.weight,
+        type: type
+      });
     } catch (error) {
       setErrorMessage("Failed to fetch data. Please try again.");
     }
@@ -51,8 +62,6 @@ const SearchPage = () => {
     setSearchTerm(name);
     setAutoSuggestion([]);
   }
-
-  console.log(searchResults)
 
   return (
     <div className="searchpage">
@@ -83,14 +92,14 @@ const SearchPage = () => {
 
       {errorMessage && <p className="error">{errorMessage}</p>}
 
-      {!searchResults ? (
+      {searchResults && (
         <div className="search__results">
           <h2>Search Results</h2>
           <ul>
-            <li>{searchResults.name}</li>
+            <Card pokemon={searchResults} />
           </ul>
         </div>
-      ):(null)}
+      )}
     </div>
   );
 };

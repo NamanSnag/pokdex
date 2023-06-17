@@ -20,7 +20,7 @@ const Navbar = () => {
           </li>
 
           <li className="nav__bookmark">
-            <Link to={"/booknark"} className="link">
+            <Link to={"/bookmark"} className="link">
               Bookmark
             </Link>
             <div className="hover"></div>
