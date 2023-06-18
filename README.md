@@ -47,10 +47,13 @@ Technologies Used
     react-infinite-scroll
 
 Screenshots
-![Screenshot 1](screenshort/img1.jpg)
-![Screenshot 2](screenshort/img2.jpg)
-![Screenshot 3](screenshort/img3.jpg)
-![Screenshot 4](screenshort/img4.jpg)
-![Screenshot 5](screenshort/img5.jpg)
-![Screenshot 6](screenshort/img6.jpg)
+![img6](https://github.com/NamanSnag/pokdex/assets/118980769/aced3b7c-4651-4efc-b8ec-a926222af337)
+![img5](https://github.com/NamanSnag/pokdex/assets/118980769/72b80b39-d4b2-4a9c-b6f4-c17657652c64)
+![img1](https://github.com/NamanSnag/pokdex/assets/118980769/49f43817-99b6-4468-a5fb-6e8865a650e5)
+
+![img2](https://github.com/NamanSnag/pokdex/assets/118980769/c7c43b7d-24b4-4e96-b69b-cd29d763b093)
+![img3](https://github.com/NamanSnag/pokdex/assets/118980769/4df2197a-7f31-47ac-8c2b-e1719a632ea9)
+
+![img4](https://github.com/NamanSnag/pokdex/assets/118980769/c606a9ab-3065-4043-8515-e80c0c51a263)
+
 
