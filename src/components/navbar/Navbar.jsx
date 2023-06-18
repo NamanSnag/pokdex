@@ -7,14 +7,16 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav__container">
+        <Link to={"/"} style={{textDecoration: "none"}}>
         <div className="nav__logo">
           <img src={logo} alt="logo" />
           <p>Pokédex</p>
         </div>
+        </Link>
         <ul className="nav__list">
           <li className="nav__pokemon">
-            <Link to={"/"} className="link">
-              Search
+            <Link to={"/listing"} className="link">
+              Pokemons
             </Link>
             <div className="hover"></div>
           </li>

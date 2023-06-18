@@ -34,7 +34,8 @@ const SearchPage = () => {
         id: data.id,
         height: data.height,
         weight: data.weight,
-        type: type
+        type: type,
+        abilities: data.abilities
       });
     } catch (error) {
       setErrorMessage("Failed to fetch data. Please try again.");
@@ -66,6 +67,7 @@ const SearchPage = () => {
   return (
     <div className="searchpage">
       <div className="search__head">
+        <div className="serach__h">
         <h1>Pokédex Search</h1>
         <div className="search__container">
           <div className="search__int">
@@ -85,6 +87,7 @@ const SearchPage = () => {
           <button onClick={handleSearch} disabled={loading}>
             Search
           </button>
+        </div>
         </div>
       </div>
 
