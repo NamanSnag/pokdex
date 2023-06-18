@@ -47,10 +47,10 @@ Technologies Used
     react-infinite-scroll
 
 Screenshots
-![Screenshot 1](screenshort/img1.img)
-![Screenshot 2](screenshort/img2.img)
-![Screenshot 3](screenshort/img3.img)
-![Screenshot 4](screenshort/img4.img)
-![Screenshot 5](screenshort/img5.img)
-![Screenshot 6](screenshort/img6.img)
+![Screenshot 1](screenshort/img1.jpg)
+![Screenshot 2](screenshort/img2.jpg)
+![Screenshot 3](screenshort/img3.jpg)
+![Screenshot 4](screenshort/img4.jpg)
+![Screenshot 5](screenshort/img5.jpg)
+![Screenshot 6](screenshort/img6.jpg)
 
