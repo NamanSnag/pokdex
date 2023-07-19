@@ -18,6 +18,11 @@ This is a React application that displays a listing of Pokémon. The listing is 
   - Abilities
 - Search functionality to find Pokémon by name with auto-suggestions.
 
+  ## Deployed Link
+
+   ```bash
+   [git clone <https://github.com/NamanSnag/pokdex.git>](https://loquacious-madeleine-de4583.netlify.app/)
+
 ## Installation
 
 1. Clone the repository:
